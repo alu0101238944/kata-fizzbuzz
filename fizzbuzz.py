@@ -1,3 +1,4 @@
 
 class FizzBuzz:
-  pass
+  def int_to_string(self, x: int):
+    return str(x)
