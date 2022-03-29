@@ -12,6 +12,10 @@ class FizzBuzzTests(unittest.TestCase):
 
   def test_give_3_return_fizz(self):
     self.assertEqual(self.fizz_buzz.int_to_string(3), 'Fizz')
+  
+  def test_give_multiple_of_3_return_fizz(self):
+    for i in range(100):
+      self.assertEqual(self.fizz_buzz.int_to_string(3 * i), 'Fizz')
 
 if __name__ == '__main__':
   unittest.main()
