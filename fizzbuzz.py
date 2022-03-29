@@ -1,6 +1,4 @@
 
 class FizzBuzz:
   def int_to_string(self, value: int):
-    if value == 3:
-      return 'Fizz'
-    return str(value)
+    return 'Fizz' if value == 3 else str(value)
