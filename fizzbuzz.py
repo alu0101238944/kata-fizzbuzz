@@ -1,4 +1,4 @@
 
 class FizzBuzz:
   def int_to_string(self, value: int):
-    pass
+    return str(value)
