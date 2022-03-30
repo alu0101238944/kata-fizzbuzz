@@ -5,7 +5,7 @@ class FizzBuzz:
     self.buzz = 'Buzz'
 
   def int_to_string(self, value: int):
-    if value == 15:
+    if (value % 3 == 0 or '3' in str(value)) and ('5' in str(value) or value % 5 == 0):
       return 'FizzBuzz'
     if value % 3 == 0 or '3' in str(value):
       return self.fizz
