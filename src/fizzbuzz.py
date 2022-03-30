@@ -9,7 +9,7 @@ class FizzBuzz():
     return str(number) if result == '' else result
     
   def is_fizz(self, number: int):
-    return self.get_recursive_digit_sum(number) in [3, 6, 9]
+    return self.get_recursive_digit_sum(number) in [3, 6, 9] or '3' in str(number)
     
   def get_recursive_digit_sum(self, number):
     return (number if number < 10
