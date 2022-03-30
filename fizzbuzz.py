@@ -4,6 +4,6 @@ class FizzBuzz:
     self.fizz = 'Fizz'
 
   def int_to_string(self, value: int):
-    if value == 3:
+    if value % 3 == 0 or '3' in str(value):
       return self.fizz
     return str(value)

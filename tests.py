@@ -13,7 +13,7 @@ class FizzBuzzTests(unittest.TestCase):
     self.assertEqual(self.fizz_buzz.int_to_string(3), 'Fizz')
 
   # Multiple only of 3 means that is not multiple of 5
-  def test_give_multiple_only_of_3_or_has_3_return_fizz(self):
+  def test_give_multiple_only_of_3_or_has_3_in_it_return_fizz(self):
     multiples_only_of_3 = []
     for i in range(5 - 1):
       multiples_only_of_3 += list(range(1 + i, 100, 5))
