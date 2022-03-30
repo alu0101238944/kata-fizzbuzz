@@ -25,5 +25,8 @@ class FizzBuzzTests(unittest.TestCase):
       else:
         self.assertEqual(self.fizz_buzz.int_to_string(i * 3), 'Fizz')
 
+  def test_give_5_return_buzz(self):
+    self.assertEqual(self.fizz_buzz.int_to_string(5), 'Buzz')
+
 if __name__ == '__main__':
   unittest.main()
