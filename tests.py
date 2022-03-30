@@ -53,12 +53,25 @@ class FizzBuzzTests(unittest.TestCase):
       else:
         self.assertEqual(self.fizz_buzz.int_to_string(i * 3 * 5), 'FizzBuzz')
 
-  def test_main_function_fizzbuzz(self):
+  def test_main_function(self):
+    expected = ''
+    for i in range(100):
+      j = i + 1
+      current_string = ''
+      if j % 3 == 0 or '3' in str(j):
+        current_string += 'Fizz'
+      if j % 5 == 0 or '5' in str(j):
+        current_string += 'Buzz'
+      if current_string == '':
+        current_string += str(j)
+      expected += current_string + '\n'
+
     captured_output = StringIO()
     sys.stdout = captured_output
     self.fizz_buzz.run()
     sys.stdout = sys.__stdout__
-    print('Captured', captured_output.getvalue())
+
+    self.assertEqual(captured_output.getvalue(), expected)
 
 if __name__ == '__main__':
   unittest.main()
