@@ -24,4 +24,4 @@ class FizzBuzz():
     return digit_sum
 
   def is_buzz(self, number: int):
-    return number % 10 in [0, 5]
+    return number % 10 in [0, 5] or '5' in str(number)
