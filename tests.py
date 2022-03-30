@@ -22,7 +22,7 @@ class FizzBuzzTests(unittest.TestCase):
       if '3' in str(i) and '5' not in str(i):
         self.assertEqual(self.fizz_buzz.int_to_string(i), 'Fizz')
       # Else multiple of 3 return Fizz
-      else:
+      elif '5' not in str(i * 3):
         self.assertEqual(self.fizz_buzz.int_to_string(i * 3), 'Fizz')
 
   def test_give_5_return_buzz(self):
@@ -38,7 +38,7 @@ class FizzBuzzTests(unittest.TestCase):
       if '5' in str(i) and '3' not in str(i):
         self.assertEqual(self.fizz_buzz.int_to_string(i), 'Buzz')
       # Else multiple of 5 return Fizz
-      else:
+      elif '3' not in str(i * 5):
         self.assertEqual(self.fizz_buzz.int_to_string(i * 5), 'Buzz')
 
 if __name__ == '__main__':
