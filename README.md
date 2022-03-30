@@ -1,3 +1,3 @@
 # Kata Fizzbuzz - J. Daniel Escánez
 
-En las diferentes ramas de este repositorio se podrán encontrar las diferentes implementaciones del problema [FizzBuzz](http://codingdojo.org/kata/FizzBuzz/), siguiendo la metodología TDD.
+En esta rama se puede encontrar mi primera kata individual. He elegido el lenguaje de programación Python, dado que ya había realizado testing sobre código escrito en el mismo. Creo que ha sido la mejor manera de centrarme en TDD, abstrayendome de todas las demás dificultades técnicas que pudieran surgir. Además, al terminarla se me ocurrieron ideas para un segundo intento de esta kata. Estas quedaron patentes en la kata grupal realizada con [CastilloDel](https://github.com/CastilloDel). El trabajo quedó patente en [este repositorio](https://github.com/CastilloDel/FizzBuzz/tree/main/python).
