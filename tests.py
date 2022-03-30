@@ -31,5 +31,8 @@ class FizzBuzzTests(unittest.TestCase):
     for i in multiples_only_of_5:
       self.assertEqual(self.fizz_buzz.int_to_string(i * 5), 'Buzz')
 
+  def test_give_multiple_of_3_and_5_return_fizzbuzz(self):
+    self.assertEqual(self.fizz_buzz.int_to_string(15), 'FizzBuzz')
+
 if __name__ == '__main__':
   unittest.main()
