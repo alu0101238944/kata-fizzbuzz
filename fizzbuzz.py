@@ -2,7 +2,7 @@
 class FizzBuzz:
   def int_to_string(self, value: int):
     result = ''
-    if value == 15:
+    if value % 15 == 0:
       result = 'FizzBuzz'
     elif value % 5 == 0:
       result = 'Buzz'
