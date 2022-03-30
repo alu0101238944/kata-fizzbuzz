@@ -41,5 +41,8 @@ class FizzBuzzTests(unittest.TestCase):
       elif '3' not in str(i * 5):
         self.assertEqual(self.fizz_buzz.int_to_string(i * 5), 'Buzz')
 
+  def test_give_15_return_fizzbuzz(self):
+    self.assertEqual(self.fizz_buzz.int_to_string(15), 'FizzBuzz')
+
 if __name__ == '__main__':
   unittest.main()
