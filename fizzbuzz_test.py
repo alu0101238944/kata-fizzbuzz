@@ -35,4 +35,5 @@ class FizzBuzzTests(unittest.TestCase):
     self.assertEqual(self.fizzbuzz.to_fizzbuzz(157), 'Buzz')
     self.assertEqual(self.fizzbuzz.to_fizzbuzz(502), 'Buzz')
 
-unittest.main()
+if __name__ == '__main__':
+  unittest.main()
