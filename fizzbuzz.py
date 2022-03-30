@@ -1,9 +1,11 @@
 
 class FizzBuzz:
   def int_to_string(self, value: int):
+    result = ''
     if value % 5 == 0:
-      return 'Buzz'
+      result = 'Buzz'
     elif value % 3 == 0:
-      return 'Fizz'
+      result = 'Fizz'
     else:
-      return str(value)
+      result = str(value)
+    return result
