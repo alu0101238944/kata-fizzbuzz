@@ -2,7 +2,7 @@
 import unittest
 from io import StringIO
 import sys
-from fizzbuzz import FizzBuzz
+from src.fizzbuzz import FizzBuzz
 
 class FizzBuzzTests(unittest.TestCase):
   def setUp(self):
