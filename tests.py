@@ -1,5 +1,7 @@
 
 import unittest
+from io import StringIO
+import sys
 from fizzbuzz import FizzBuzz
 
 class FizzBuzzTests(unittest.TestCase):
@@ -50,6 +52,13 @@ class FizzBuzzTests(unittest.TestCase):
         self.assertEqual(self.fizz_buzz.int_to_string(i), 'FizzBuzz')
       else:
         self.assertEqual(self.fizz_buzz.int_to_string(i * 3 * 5), 'FizzBuzz')
+
+  def test_main_function_fizzbuzz(self):
+    captured_output = StringIO()
+    sys.stdout = captured_output
+    self.fizz_buzz.run()
+    sys.stdout = sys.__stdout__
+    print('Captured', captured_output.getvalue())
 
 if __name__ == '__main__':
   unittest.main()
