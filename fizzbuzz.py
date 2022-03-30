@@ -5,11 +5,9 @@ class FizzBuzz:
     self.buzz = 'Buzz'
 
   def int_to_string(self, value: int):
-    if (value % 3 == 0 or '3' in str(value)) and ('5' in str(value) or value % 5 == 0):
-      return 'FizzBuzz'
+    result = ''
     if value % 3 == 0 or '3' in str(value):
-      return self.fizz
-    elif value % 5 == 0 or '5' in str(value):
-      return self.buzz
-    else:
-      return str(value)
+      result += self.fizz
+    if value % 5 == 0 or '5' in str(value):
+      result += self.buzz
+    return result if result != '' else str(value)
