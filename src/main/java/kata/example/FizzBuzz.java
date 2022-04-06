@@ -8,13 +8,11 @@ public class FizzBuzz {
   }
 
   public String getState() {
-    if (this.state_ % 3 == 0) {
+    if (this.state_ % 3 == 0)
       return "Fizz";
-    } else if (this.state_ % 5 == 0) {
+    if (this.state_ % 5 == 0)
       return "Buzz";
-    } else {
-      return Integer.toString(this.state_);
-    }
+    return Integer.toString(this.state_);
   }
 
   public void next() {
