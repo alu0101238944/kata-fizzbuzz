@@ -8,4 +8,7 @@ public class FizzBuzz {
   public String getState() {
     return Integer.toString(this.state_);
   }
+  public String getNextState() {
+    return Integer.toString(this.state_ + 1);
+  }
 };
