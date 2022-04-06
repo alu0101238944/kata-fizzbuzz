@@ -35,4 +35,12 @@ class FizzBuzzTest {
     FizzBuzz fizzbuzz110 = new FizzBuzz(110);
     assertEquals("Buzz", fizzbuzz110.getState());
   }
+
+  @Test
+  void shouldGetStateOfMultipleOf5AndMultipleOf3AsFizzBuzz() {
+    FizzBuzz fizzbuzz30 = new FizzBuzz(30);
+    assertEquals("FizzBuzz", fizzbuzz30.getState());
+    FizzBuzz fizzbuzz465 = new FizzBuzz(465);
+    assertEquals("FizzBuzz", fizzbuzz465.getState());
+  }
 }
