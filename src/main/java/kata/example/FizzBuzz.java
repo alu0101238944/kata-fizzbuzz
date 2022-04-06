@@ -8,7 +8,13 @@ public class FizzBuzz {
   }
 
   public String getState() {
-    return this.state_ % 3 == 0 ? "Fizz" : Integer.toString(this.state_);
+    if (this.state_ % 3 == 0) {
+      return "Fizz";
+    } else if (this.state_ % 5 == 0) {
+      return "Buzz";
+    } else {
+      return Integer.toString(this.state_);
+    }
   }
 
   public void next() {
